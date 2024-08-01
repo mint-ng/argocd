@@ -11,6 +11,8 @@ values: |-
     enabled: false
   ingress:
     host: metabase
+  role:
+    enabled: false
   resources:
     requests:
       memory: "1Gi"
