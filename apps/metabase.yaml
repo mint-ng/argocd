@@ -1,5 +1,5 @@
 name: metabase
-project: afrione-api-project
+project: mintyn-project
 namespace: metabase-sandbox
 values: |-
   fullnameOverride: metabase
