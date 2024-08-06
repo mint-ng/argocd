@@ -24,14 +24,14 @@ values: |-
     enabled: false
     path: /actuator/health
     failureThreshold: 5
-    periodSeconds: 15
-    initialDelaySeconds: 120
+    periodSeconds: 10
+    initialDelaySeconds: 60
   rProbe:
     enabled: false
     path: /actuator/health
     failureThreshold: 5
-    periodSeconds: 15
-    initialDelaySeconds: 120
+    periodSeconds: 10
+    initialDelaySeconds: 60
   env:
     - name: MB_DB_PORT
       value: "5432"
