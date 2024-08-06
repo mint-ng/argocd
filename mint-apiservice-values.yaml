@@ -1,0 +1,52 @@
+name: mint-api-gateway-service
+project: mintyn-project
+namespace: sandbox
+values: |-
+  fullnameOverride: api-gateway-service
+  image: 
+    repository: afrioneltd/api-gateway-service:app-
+  namespace: sandbox
+  containerPort: 9001
+  autoscaling:
+    enabled: false
+  ingress:
+    host: api-sandbox
+  resources:
+    requests:
+      memory: "1Gi"
+      cpu: "500m"
+    limits:
+      memory: "2Gi"
+      cpu: "1000m"
+  lProbe:
+    enabled: true
+    path: /actuator/health
+    failureThreshold: 5
+    periodSeconds: 10
+    initialDelaySeconds: 60
+  rProbe:
+    enabled: true
+    path: /actuator/health
+    failureThreshold: 5
+    periodSeconds: 10
+    initialDelaySeconds: 60
+  env:
+    - name: AUTHORIZATION_API_GATEWAY_SERVICE_HOST
+      value: http://authorization-api-gateway
+    - name: KUBERNETES_NAMESPACE
+      value: sandbox
+    - name: SPRING_PROFILES_ACTIVE
+      value: sandbox
+    - name: KAFKA_BROKERS_URL
+      valueFrom:
+        configMapKeyRef:
+          name: configs
+          key: KAFKA_HOST
+  volumeMounts:
+    - name: config
+      mountPath: "/config"
+      readOnly: true
+  volumes:
+    - name: config
+      configMap:
+        name: authorization-api-gateway
