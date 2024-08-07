@@ -2,9 +2,9 @@ name: mint-api-gateway-service
 project: mintyn-project
 namespace: sandbox
 values: |-
-  fullnameOverride: api-gateway-service
+  fullnameOverride: mint-api-gateway-service
   image: 
-    repository:
+    repository: mintfintech/mint-api-gateway-service:
   namespace: sandbox
   containerPort: 9001
   autoscaling:
