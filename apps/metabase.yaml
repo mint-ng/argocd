@@ -9,8 +9,6 @@ values: |-
   containerPort: 3000
   autoscaling:
     enabled: false
-  roles:
-    enabled: true
   ingress:
     host: metabase
   role:

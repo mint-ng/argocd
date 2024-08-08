@@ -9,6 +9,8 @@ values: |-
   containerPort: 9001
   autoscaling:
     enabled: false
+  role:
+    enabled: true
   ingress:
     host: api-sandbox
   resources:
