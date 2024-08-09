@@ -6,7 +6,7 @@ values: |-
   image: 
     repository: mintfintech/mint-account-service:app-4
   namespace: sandbox
-  containerPort: 8090
+  containerPort: 8091
   autoscaling:
     enabled: false
   role:
