@@ -1,22 +1,22 @@
-name: mint-account-service
+name: mint-bills-service
 project: mintyn-project
 namespace: sandbox
 values: |-
-  fullnameOverride: mint-account-service
+  fullnameOverride: mint-bills-service
   image: 
-    repository: mintfintech/mint-account-service:app-4
+    repository: mintfintech/mint-bills-service:app-2
   namespace: sandbox
-  containerPort: 8091
+  containerPort: 8098
   autoscaling:
     enabled: false
   role:
     enabled: true
   ingress:
-    host: account-service
+    host: bills-service
   resources:
     requests:
-      memory: "1Gi"
-      cpu: "500m"
+      memory: "640Mi"
+      cpu: "250m"
     limits:
       memory: "2Gi"
       cpu: "1000m"
@@ -33,8 +33,8 @@ values: |-
     periodSeconds: 10
     initialDelaySeconds: 60
   env:
-    - name: ACCOUNT_SERVICE_SERVICE_HOST
-      value: http://account-service
+    - name: BILLS_SERVICE_SERVICE_HOST
+      value: http://bills-service
     - name: KUBERNETES_NAMESPACE
       value: sandbox
     - name: SPRING_PROFILES_ACTIVE
@@ -51,4 +51,4 @@ values: |-
   volumes:
     - name: config
       configMap:
-        name: account-service
+        name: bills-service

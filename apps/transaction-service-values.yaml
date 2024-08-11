@@ -12,7 +12,7 @@ values: |-
   role:
     enabled: true
   ingress:
-    host: api-sandbox
+    host: fund-transaction-service
   resources:
     requests:
       memory: "640Mi"
