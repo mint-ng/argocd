@@ -2,7 +2,7 @@ name: mint-fund-transaction-service
 project: mintyn-project
 namespace: sandbox
 values: |-
-  fullnameOverride: mint-fund-transaction-service
+  fullnameOverride: fund-transaction-service
   image: 
     repository: mintfintech/mint-fund-transaction-service:app-2
   namespace: sandbox

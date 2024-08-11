@@ -2,7 +2,7 @@ name: mint-account-service
 project: mintyn-project
 namespace: sandbox
 values: |-
-  fullnameOverride: mint-account-service
+  fullnameOverride: account-service
   image: 
     repository: mintfintech/mint-account-service:app-4
   namespace: sandbox

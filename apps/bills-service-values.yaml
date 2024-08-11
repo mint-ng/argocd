@@ -2,7 +2,7 @@ name: mint-bills-service
 project: mintyn-project
 namespace: sandbox
 values: |-
-  fullnameOverride: mint-bills-service
+  fullnameOverride: bills-service
   image: 
     repository: mintfintech/mint-bills-service:app-2
   namespace: sandbox
