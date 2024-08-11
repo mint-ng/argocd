@@ -6,7 +6,7 @@ values: |-
   image: 
     repository: mintfintech/mint-openapi-service:app-2
   namespace: sandbox
-  containerPort: 8098
+  containerPort: 9091
   autoscaling:
     enabled: false
   role:
