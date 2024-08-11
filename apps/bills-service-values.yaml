@@ -15,7 +15,7 @@ values: |-
     host: bills-service
   resources:
     requests:
-      memory: "640Mi"
+      memory: "440Mi"
       cpu: "250m"
     limits:
       memory: "2Gi"
