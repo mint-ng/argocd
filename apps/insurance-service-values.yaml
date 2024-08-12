@@ -1,5 +1,5 @@
 name: mint-insurance-service-production
-project: mintyn-project-production
+project: mintyn-project
 namespace: production
 values: |-
   fullnameOverride: insurance-service
