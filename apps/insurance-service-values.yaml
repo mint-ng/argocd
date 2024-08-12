@@ -1,11 +1,11 @@
-name: mint-insurance-service-sandbox
-project: mintyn-project-sandbox
-namespace: sandbox
+name: mint-insurance-service-production
+project: mintyn-project-production
+namespace: production
 values: |-
   fullnameOverride: insurance-service
   image: 
-    repository: mintfintech/mint-insurance-service:app-8
-  namespace: sandbox
+    repository: mintfintech/mint-insurance-service:app-2
+  namespace: production
   containerPort: 9092
   autoscaling:
     enabled: false
@@ -36,7 +36,7 @@ values: |-
     - name: INSURANCE_SERVICE_SERVICE_HOST
       value: http://insurance-service
     - name: KUBERNETES_NAMESPACE
-      value: sandbox
+      value: production
     - name: KAFKA_BROKERS_URL
       valueFrom:
         configMapKeyRef:
