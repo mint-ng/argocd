@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: insurance-service
   image: 
-    repository: mintfintech/mint-insurance-service:app-6
+    repository: mintfintech/mint-insurance-service:app-7
   namespace: sandbox
   containerPort: 9092
   autoscaling:
