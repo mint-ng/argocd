@@ -11,6 +11,7 @@ values: |-
     enabled: false
   ingress:
     host: metabase
+    domain: mintfintech.com
   role:
     enabled: false
   resources:

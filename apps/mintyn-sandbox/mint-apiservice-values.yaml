@@ -13,6 +13,7 @@ values: |-
     enabled: true
   ingress:
     host: api-sandbox
+    domain: mintfintech.com
   resources:
     requests:
       memory: "1Gi"

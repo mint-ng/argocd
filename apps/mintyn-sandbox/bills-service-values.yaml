@@ -13,6 +13,7 @@ values: |-
     enabled: true
   ingress:
     host: bills-service
+    domain: mintfintech.com
   resources:
     requests:
       memory: "440Mi"

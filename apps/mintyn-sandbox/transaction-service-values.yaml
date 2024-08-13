@@ -13,6 +13,7 @@ values: |-
     enabled: true
   ingress:
     host: fund-transaction-service
+    domain: mintfintech.com
   resources:
     requests:
       memory: "640Mi"
