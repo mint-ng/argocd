@@ -2,7 +2,7 @@ name: mint-insurance-service-sandbox
 project: mintyn-project
 namespace: sandbox
 values: |-
-  fullnameOverride: insurance-service
+  fullnameOverride: insurance-service-sandbox
   image: 
     repository: mintfintech/mint-insurance-service:app-12
   namespace: sandbox
