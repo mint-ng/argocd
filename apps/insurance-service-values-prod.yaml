@@ -2,7 +2,7 @@ name: mint-insurance-service-prod
 project: mintyn-project-prod
 namespace: production
 values: |-
-  fullnameOverride: insurance-service
+  fullnameOverride: insurance-service-prod
   image: 
     repository: mintfintech/mint-insurance-service:app-9
   namespace: production
