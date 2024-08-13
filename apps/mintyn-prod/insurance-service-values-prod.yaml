@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: insurance-service
   image: 
-    repository: mintfintech/mint-insurance-service:app-6
+    repository: mintfintech/mint-insurance-service:app-7
   namespace: production
   containerPort: 9092
   autoscaling:
