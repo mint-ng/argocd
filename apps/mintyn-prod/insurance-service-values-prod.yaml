@@ -1,8 +1,8 @@
-name: mint-insurance-service-prod
+name: mint-insurance-service
 project: mintyn-project-prod
 namespace: production
 values: |-
-  fullnameOverride: insurance-service-prod
+  fullnameOverride: mint-insurance-service
   image: 
     repository: mintfintech/mint-insurance-service:app-6
   namespace: production
@@ -13,6 +13,7 @@ values: |-
     enabled: true
   ingress:
     host: insurance-service
+    domain: mintfintech.com
   resources:
     requests:
       memory: "440Mi"
