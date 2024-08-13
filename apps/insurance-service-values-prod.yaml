@@ -1,5 +1,5 @@
 name: mint-insurance-service-sandbox
-project: mintyn-project
+project: mintyn-project-prod
 namespace: sandbox
 values: |-
   fullnameOverride: insurance-service
