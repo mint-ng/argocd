@@ -1,0 +1,32 @@
+name: mint-webapp
+project: mintyn-project
+namespace: sandbox
+values: |-
+  fullnameOverride: mintyn-webapp
+  image: 
+    repository: mintfintech/mint-web-app:app-1
+  namespace: sandbox
+  containerPort: 80
+  autoscaling:
+    enabled: false
+  role:
+    enabled: true
+  ingress:
+    host: app-sandbox
+    domain: mintyn.com
+  resources:
+    limits:
+      memory: "2Gi"
+      cpu: "1000m"
+  lProbe:
+    enabled: false
+    path: /
+    failureThreshold: 5
+    periodSeconds: 10
+    initialDelaySeconds: 60
+  rProbe:
+    enabled: false
+    path: /
+    failureThreshold: 5
+    periodSeconds: 10
+    initialDelaySeconds: 60
