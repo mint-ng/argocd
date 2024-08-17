@@ -1,22 +1,22 @@
-name: mint-insurance-service
+name: mint-affiliate-service
 project: mintyn-project-prod
 namespace: production
 values: |-
-  fullnameOverride: mint-insurance-service
+  fullnameOverride: affiliate-service
   image: 
-    repository: mintfintech/mint-insurance-service:app-7
+    repository: mintfintech/mint-affiliate-service:app-10
   namespace: production
-  containerPort: 9092
+  containerPort: 8101
   autoscaling:
     enabled: false
   role:
     enabled: true
   ingress:
-    host: insurance-service
+    host: affiliate-service
     domain: mintfintech.com
   resources:
     requests:
-      memory: "440Mi"
+      memory: "400Mi"
       cpu: "250m"
     limits:
       memory: "2Gi"
@@ -34,8 +34,8 @@ values: |-
     periodSeconds: 10
     initialDelaySeconds: 60
   env:
-    - name: INSURANCE_SERVICE_SERVICE_HOST
-      value: http://insurance-service
+    - name: AFFILIATE_SERVICE_SERVICE_HOST
+      value: http://affiliate-service
     - name: KUBERNETES_NAMESPACE
       value: production
     - name: SPRING_PROFILES_ACTIVE
@@ -52,4 +52,4 @@ values: |-
   volumes:
     - name: config
       configMap:
-        name: insurance-service
+        name: affiliate-service
