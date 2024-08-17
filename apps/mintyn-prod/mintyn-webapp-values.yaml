@@ -12,7 +12,7 @@ values: |-
   role:
     enabled: true
   ingress:
-    host: app-live
+    host: applive
     domain: mintyn.com
   resources:
     requests:
