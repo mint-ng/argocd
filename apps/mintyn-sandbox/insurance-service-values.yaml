@@ -38,6 +38,8 @@ values: |-
       value: http://insurance-service
     - name: KUBERNETES_NAMESPACE
       value: sandbox
+    - name: SPRING_PROFILES_ACTIVE
+      value: sandbox
     - name: KAFKA_BROKERS_URL
       valueFrom:
         configMapKeyRef:
