@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: affiliate-service
   image: 
-    repository: mintfintech/mint-affiliate-service:app-1
+    repository: mintfintech/mint-affiliate-service:app-2
   namespace: sandbox
   containerPort: 8101
   autoscaling:
