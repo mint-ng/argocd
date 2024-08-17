@@ -1,8 +1,8 @@
-name: mintyn-webapp
-project: mintyn-project
+name: mint-webapp
+project: mintyn-project-prod
 namespace: production
 values: |-
-  fullnameOverride: mintyn-webapp
+  fullnameOverride: mint-webapp
   image: 
     repository: mintfintech/mint-web-app:app-19
   namespace: production
