@@ -2,7 +2,7 @@ name: mint-webapp
 project: mintyn-project
 namespace: sandbox
 values: |-
-  fullnameOverride: mintyn-webapp
+  fullnameOverride: mint-webapp
   image: 
     repository: mintfintech/mint-web-app:app-16
   namespace: sandbox

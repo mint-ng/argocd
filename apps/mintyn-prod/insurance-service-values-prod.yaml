@@ -1,4 +1,4 @@
-name: mint-insurance-service
+name: insurance-service
 project: mintyn-project-prod
 namespace: production
 values: |-
