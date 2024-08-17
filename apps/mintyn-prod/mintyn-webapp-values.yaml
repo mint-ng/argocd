@@ -8,7 +8,7 @@ values: |-
   namespace: production
   containerPort: 80
   autoscaling:
-    enabled: true
+    enabled: false
   role:
     enabled: true
   ingress:
