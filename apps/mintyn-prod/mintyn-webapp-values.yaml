@@ -1,0 +1,35 @@
+name: mintyn-webapp
+project: mintyn-project
+namespace: production
+values: |-
+  fullnameOverride: mintyn-webapp
+  image: 
+    repository: mintfintech/mint-web-app:app-16
+  namespace: production
+  containerPort: 80
+  autoscaling:
+    enabled: true
+  role:
+    enabled: true
+  ingress:
+    host: app-live
+    domain: mintyn.com
+  resources:
+    requests:
+      memory: "64Mi"
+      cpu: "50m"
+    limits:
+      memory: "2Gi"
+      cpu: "1000m"
+  lProbe:
+    enabled: false
+    path: /
+    failureThreshold: 5
+    periodSeconds: 5
+    initialDelaySeconds: 10
+  rProbe:
+    enabled: false
+    path: /
+    failureThreshold: 5
+    periodSeconds: 5
+    initialDelaySeconds: 10
