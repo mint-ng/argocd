@@ -6,7 +6,7 @@ values: |-
   image: 
     repository: mintfintech/mint-trade-service:app-3
   namespace: sandbox
-  containerPort: 9092
+  containerPort: 8101
   autoscaling:
     enabled: false
   role:
