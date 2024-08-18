@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: mint-webapp
   image: 
-    repository: mintfintech/mint-web-app:app-19
+    repository: mintfintech/mint_web-app:prod-5
   namespace: production
   containerPort: 80
   autoscaling:
@@ -12,7 +12,7 @@ values: |-
   role:
     enabled: true
   ingress:
-    host: applive
+    host: apps
     domain: mintyn.com
   resources:
     requests:
