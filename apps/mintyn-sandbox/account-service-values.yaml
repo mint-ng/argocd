@@ -1,4 +1,4 @@
-name: mint-account-service
+name: account-service
 project: mintyn-project
 namespace: sandbox
 values: |-
