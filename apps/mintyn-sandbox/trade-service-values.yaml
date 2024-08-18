@@ -1,0 +1,55 @@
+name: trade-service
+project: mintyn-project
+namespace: sandbox
+values: |-
+  fullnameOverride: trade-service
+  image: 
+    repository: mintfintech/mint-trade-service:app-14
+  namespace: sandbox
+  containerPort: 9092
+  autoscaling:
+    enabled: false
+  role:
+    enabled: true
+  ingress:
+    host: trade-service
+    domain: mintfintech.com
+  resources:
+    requests:
+      memory: "440Mi"
+      cpu: "250m"
+    limits:
+      memory: "2Gi"
+      cpu: "1000m"
+  lProbe:
+    enabled: true
+    path: /actuator/health
+    failureThreshold: 5
+    periodSeconds: 10
+    initialDelaySeconds: 60
+  rProbe:
+    enabled: true
+    path: /actuator/health
+    failureThreshold: 5
+    periodSeconds: 10
+    initialDelaySeconds: 60
+  env:
+    - name: TRADE_SERVICE_SERVICE_HOST
+      value: http://trade-service
+    - name: KUBERNETES_NAMESPACE
+      value: sandbox
+    - name: SPRING_PROFILES_ACTIVE
+      value: sandbox
+    - name: KAFKA_BROKERS_URL
+      valueFrom:
+        configMapKeyRef:
+          name: configs
+          key: KAFKA_HOST
+  volumeMounts:
+    - name: config
+      mountPath: "/config"
+      readOnly: true
+  volumes:
+    - name: config
+      configMap:
+        name: trade-service
