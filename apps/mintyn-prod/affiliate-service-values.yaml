@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: affiliate-service
   image: 
-    repository: mintfintech/mint-affiliate-service:app-3
+    repository: mintfintech/mint-affiliate-service:app-4
   namespace: production
   containerPort: 8101
   autoscaling:
