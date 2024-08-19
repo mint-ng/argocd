@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: mint-webapp
   image: 
-    repository: mintfintech/mint-web-app:app-19
+    repository: mintfintech/mint-web-app:app-20
   namespace: production
   containerPort: 80
   autoscaling:
