@@ -1,22 +1,22 @@
-name: bills-service
+name: savings-service
 project: mintyn-project
 namespace: sandbox
 values: |-
-  fullnameOverride: bills-service
+  fullnameOverride: savings-service
   image: 
-    repository: mintfintech/mint-bills-service:app-1
-  namespace: sandbox
-  containerPort: 8098
+    repository: mintfintech/mint-savings-service:app-100
+  namespace: production
+  containerPort: 8096
   autoscaling:
     enabled: false
   role:
     enabled: true
   ingress:
-    host: bills-service
+    host: savings-service
     domain: mintfintech.com
   resources:
     requests:
-      memory: "440Mi"
+      memory: "400Mi"
       cpu: "250m"
     limits:
       memory: "2Gi"
@@ -34,12 +34,12 @@ values: |-
     periodSeconds: 10
     initialDelaySeconds: 60
   env:
-    - name: BILLS_SERVICE_SERVICE_HOST
-      value: http://bills-service
+    - name: SAVINGS_SERVICE_SERVICE_HOST
+      value: http://savings-service
     - name: KUBERNETES_NAMESPACE
-      value: sandbox
+      value: production
     - name: SPRING_PROFILES_ACTIVE
-      value: sandbox
+      value: prod
     - name: KAFKA_BROKERS_URL
       valueFrom:
         configMapKeyRef:
@@ -52,4 +52,4 @@ values: |-
   volumes:
     - name: config
       configMap:
-        name: bills-service
+        name: savings-service

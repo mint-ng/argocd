@@ -39,7 +39,7 @@ values: |-
     - name: KUBERNETES_NAMESPACE
       value: production
     - name: SPRING_PROFILES_ACTIVE
-      value: production
+      value: prod
     - name: KAFKA_BROKERS_URL
       valueFrom:
         configMapKeyRef:
