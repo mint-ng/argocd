@@ -1,0 +1,55 @@
+name: api-gateway-service
+project: mintyn-project
+namespace: production
+values: |-
+  fullnameOverride: api-gateway-service
+  image: 
+    repository: mintfintech/mint-api-gateway-service:app-100
+  namespace: production
+  containerPort: 8090
+  autoscaling:
+    enabled: false
+  role:
+    enabled: true
+  ingress:
+    host: api
+    domain: mintfintech.com
+  resources:
+    requests:
+      memory: "1Gi"
+      cpu: "500m"
+    limits:
+      memory: "2Gi"
+      cpu: "1000m"
+  lProbe:
+    enabled: true
+    path: /actuator/health
+    failureThreshold: 5
+    periodSeconds: 10
+    initialDelaySeconds: 60
+  rProbe:
+    enabled: true
+    path: /actuator/health
+    failureThreshold: 5
+    periodSeconds: 10
+    initialDelaySeconds: 60
+  env:
+    - name: AUTHORIZATION_API_GATEWAY_SERVICE_HOST
+      value: http://authorization-api-gateway
+    - name: KUBERNETES_NAMESPACE
+      value: production
+    - name: SPRING_PROFILES_ACTIVE
+      value: prod
+    - name: KAFKA_BROKERS_URL
+      valueFrom:
+        configMapKeyRef:
+          name: configs
+          key: KAFKA_HOST
+  volumeMounts:
+    - name: config
+      mountPath: "/config"
+      readOnly: true
+  volumes:
+    - name: config
+      configMap:
+        name: authorization-api-gateway
