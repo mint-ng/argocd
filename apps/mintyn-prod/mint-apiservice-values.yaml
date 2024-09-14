@@ -1,8 +1,8 @@
-name: api-gateway-service
+name: authorization-api-gateway
 project: mintyn-project
 namespace: production
 values: |-
-  fullnameOverride: api-gateway-service
+  fullnameOverride: authorization-api-gateway
   image: 
     repository: mintfintech/mint-api-gateway-service:app-2
   namespace: production
