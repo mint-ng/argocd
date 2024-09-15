@@ -19,7 +19,7 @@ values: |-
       memory: "450Mi"
       cpu: "250m"
     limits:
-      memory: "2Gi"
+      memory: "1Gi"
       cpu: "1000m"
   lProbe:
     enabled: true
