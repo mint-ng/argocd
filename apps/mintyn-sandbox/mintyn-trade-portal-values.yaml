@@ -16,8 +16,8 @@ values: |-
     domain: mintyn.com
   resources:
     requests:
-      memory: "64Mi"
-      cpu: "50m"
+      memory: "10Mi"
+      cpu: "10m"
     limits:
       memory: "2Gi"
       cpu: "1000m"
