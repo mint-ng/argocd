@@ -16,11 +16,11 @@ values: |-
     domain: mintyn.com
   resources:
     requests:
-      memory: "64Mi"
-      cpu: "50m"
+      memory: "25Mi"
+      cpu: "10m"
     limits:
-      memory: "2Gi"
-      cpu: "1000m"
+      memory: "500Mi"
+      cpu: "500m"
   lProbe:
     enabled: false
     path: /
