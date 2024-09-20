@@ -17,10 +17,10 @@ values: |-
   resources:
     requests:
       memory: "440Mi"
-      cpu: "250m"
+      cpu: "50m"
     limits:
-      memory: "2Gi"
-      cpu: "1000m"
+      memory: "1Gi"
+      cpu: "750m"
   lProbe:
     enabled: true
     path: /actuator/health
