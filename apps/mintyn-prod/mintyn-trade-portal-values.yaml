@@ -5,7 +5,7 @@ values: |-
   fullnameOverride: trade-portal
   image: 
     repository: mintfintech/mintyn-trade-portal:prod-app-1
-  namespace: sandbox
+  namespace: production
   containerPort: 80
   autoscaling:
     enabled: false
