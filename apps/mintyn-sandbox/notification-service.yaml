@@ -12,7 +12,7 @@ values: |-
   role:
     enabled: true
   ingress:
-    host: notification-service
+    host: sandbox-notification-service
     domain: mintfintech.com
   resources:
     requests:
