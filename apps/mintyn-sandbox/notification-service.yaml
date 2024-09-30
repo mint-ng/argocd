@@ -12,8 +12,8 @@ values: |-
   role:
     enabled: true
   ingress:
-    host: sandbox-notification-service
-    domain: mintfintech.com
+    host: notification-service
+    domain: mintyn.com
   resources:
     requests:
       memory: "64Mi"
