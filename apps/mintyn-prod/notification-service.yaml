@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: notification-service
   image: 
-    repository: mintfintech/notification-service:prod-app-5
+    repository: mintfintech/notification-service:prod-app-6
   namespace: production
   containerPort: 3000
   autoscaling:
