@@ -17,9 +17,9 @@ values: |-
   resources:
     requests:
       memory: "440Mi"
-      cpu: "50m"
+      cpu: "150m"
     limits:
-      memory: "2Gi"
+      memory: "1Gi"
       cpu: "1000m"
   lProbe:
     enabled: true
