@@ -1,10 +1,10 @@
-name: account-service
+name: notification-service
 project: mintyn-project
 namespace: sandbox
 values: |-
   fullnameOverride: notification-service
   image: 
-    repository: mintfintech/notification-service:app-1
+    repository: mintfintech/notification-service:app-2
   namespace: sandbox
   containerPort: 3000
   autoscaling:
