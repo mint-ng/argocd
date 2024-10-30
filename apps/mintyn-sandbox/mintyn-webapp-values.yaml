@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: mint-webapp
   image: 
-    repository: mintfintech/mint-web-app:app-40
+    repository: mintfintech/mint-web-app:app-43
   namespace: sandbox
   containerPort: 80
   autoscaling:
