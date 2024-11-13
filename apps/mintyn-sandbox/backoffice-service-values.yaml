@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: backoffice-service
   image: 
-    repository: mintfintech/mint-backoffice-service:app-2
+    repository: mintfintech/mint-backoffice-service:app-3
   namespace: sandbox
   containerPort: 8099
   autoscaling:
