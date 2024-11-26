@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: core-banking-service
   image: 
-    repository: mintfintech/mint-core-banking-service:app-3
+    repository: mintfintech/mint-core-banking-service:app-4
   namespace: sandbox
   containerPort: 8092
   autoscaling:
