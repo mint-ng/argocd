@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: mint-admin-portal
   image: 
-    repository: mintfintech/mintyn-admin-portal:app-12
+    repository: mintfintech/mintyn-admin-portal:app-13
   namespace: sandbox
   containerPort: 80
   autoscaling:
