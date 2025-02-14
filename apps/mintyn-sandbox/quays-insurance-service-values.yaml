@@ -2,9 +2,9 @@ name: quays-banking-service
 project: mintyn-project
 namespace: sandbox
 values: |-
-  fullnameOverride: quays-banking-service
+  fullnameOverride: quays-insurance-service
   image: 
-    repository: goquays/quays-banking-service:app-27
+    repository: goquays/quays-insurance-service:app-27
   namespace: sandbox
   containerPort: 9100
   autoscaling:
@@ -12,7 +12,7 @@ values: |-
   role:
     enabled: true
   ingress:
-    host: quays-banking-service
+    host: quays-insurance-service
     domain: mintfintech.com
   resources:
     requests:
@@ -35,7 +35,7 @@ values: |-
     initialDelaySeconds: 60
   env:
     - name: QUAYS_INSURANCE_SERVICE_SERVICE_HOST
-      value: http://quays-banking-service
+      value: http://quays-insurance-service
     - name: KUBERNETES_NAMESPACE
       value: sandbox
     - name: SPRING_PROFILES_ACTIVE
