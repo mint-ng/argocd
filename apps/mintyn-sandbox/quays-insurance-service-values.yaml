@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: quays-insurance-service
   image: 
-    repository: goquays/quays-insurance-service:app-5
+    repository: goquays/quays-insurance-service:app-6
   namespace: sandbox
   containerPort: 9100
   autoscaling:
