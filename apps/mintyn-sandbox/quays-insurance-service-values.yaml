@@ -42,7 +42,7 @@ values: |-
       value: sandbox
   volumeMounts:
     - name: config
-      mountPath: "/config"
+      mountPath: "/quays/config"
       readOnly: true
   volumes:
     - name: config
