@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: quays-banking-service
   image: 
-    repository: goquays/quays-banking-service:app-27
+    repository: goquays/quays-banking-service:app-1
   namespace: sandbox
   containerPort: 9100
   autoscaling:
