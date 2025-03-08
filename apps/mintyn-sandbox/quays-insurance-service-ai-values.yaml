@@ -6,7 +6,7 @@ values: |-
   image: 
     repository: goquays/quays-insurance-service-ai:app-3
   namespace: sandbox
-  containerPort: 80
+  containerPort: 5000
   autoscaling:
     enabled: false
   role:
@@ -19,16 +19,16 @@ values: |-
       memory: "500Mi"
       cpu: "200m"
     limits:
-      memory: "2Gi"
+      memory: "1Gi"
       cpu: "1000m"
   lProbe:
-    enabled: true
+    enabled: false
     path: /health
     failureThreshold: 5
     periodSeconds: 10
     initialDelaySeconds: 60
   rProbe:
-    enabled: true
+    enabled: false
     path: /health
     failureThreshold: 5
     periodSeconds: 10
