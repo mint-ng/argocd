@@ -6,7 +6,7 @@ values: |-
   image: 
     repository: goquays/quays-insurance-service-ai:app-3
   namespace: sandbox
-  containerPort: 8000
+  containerPort: 80
   autoscaling:
     enabled: false
   role:
