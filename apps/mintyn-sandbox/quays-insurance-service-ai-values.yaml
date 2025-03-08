@@ -23,13 +23,13 @@ values: |-
       cpu: "1000m"
   lProbe:
     enabled: true
-    path: /
+    path: /health
     failureThreshold: 5
     periodSeconds: 10
     initialDelaySeconds: 60
   rProbe:
     enabled: true
-    path: /
+    path: /health
     failureThreshold: 5
     periodSeconds: 10
     initialDelaySeconds: 60
