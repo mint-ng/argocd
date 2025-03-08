@@ -21,6 +21,18 @@ values: |-
     limits:
       memory: "2Gi"
       cpu: "1000m"
+  lProbe:
+    enabled: true
+    path: /health
+    failureThreshold: 5
+    periodSeconds: 10
+    initialDelaySeconds: 60
+  rProbe:
+    enabled: true
+    path: /health
+    failureThreshold: 5
+    periodSeconds: 10
+    initialDelaySeconds: 60
   env:
     - name: QUAYS_INSURANCE_SERVICE_SERVICE_AI_HOST
       value: http://quays-insurance-service-ai
