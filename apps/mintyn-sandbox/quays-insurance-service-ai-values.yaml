@@ -6,7 +6,7 @@ values: |-
   image: 
     repository: goquays/quays-insurance-service-ai:app-2
   namespace: sandbox
-  containerPort: 5000
+  containerPort: 4000
   autoscaling:
     enabled: false
   role:
@@ -55,11 +55,3 @@ values: |-
         configMapKeyRef:
           name: configs
           key: DATABASE_HOST
-  volumeMounts:
-    - name: config
-      mountPath: "/quays/config"
-      readOnly: true
-  volumes:
-    - name: config
-      configMap:
-        name: quays-insurance-service
