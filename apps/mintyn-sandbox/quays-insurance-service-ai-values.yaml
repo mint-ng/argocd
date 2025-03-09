@@ -19,8 +19,8 @@ values: |-
       memory: "500Mi"
       cpu: "200m"
     limits:
-      memory: "1Gi"
-      cpu: "1000m"
+      memory: "800Mi"
+      cpu: "500m"
   lProbe:
     enabled: false
     path: /health
