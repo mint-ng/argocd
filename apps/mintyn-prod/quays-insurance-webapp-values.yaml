@@ -6,7 +6,7 @@ values: |-
   image: 
     repository: goquays/quays-webapp:app-prod-1
   namespace: production
-  containerPort: 3000
+  containerPort: 80
   autoscaling:
     enabled: false
   role:
