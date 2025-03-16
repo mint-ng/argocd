@@ -6,7 +6,7 @@ values: |-
   image: 
     repository: goquays/quays-webapp:app-prod-1
   namespace: production
-  containerPort: 80
+  containerPort: 3000
   autoscaling:
     enabled: false
   role:
@@ -22,13 +22,13 @@ values: |-
       memory: "500Mi"
       cpu: "250m"
   lProbe:
-    enabled: false
+    enabled: true
     path: /
     failureThreshold: 5
     periodSeconds: 5
     initialDelaySeconds: 10
   rProbe:
-    enabled: false
+    enabled: true
     path: /
     failureThreshold: 5
     periodSeconds: 5
