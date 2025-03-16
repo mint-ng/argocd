@@ -1,4 +1,4 @@
-name: mint-admin-portal
+name: quays-webapp
 project: mintyn-project
 namespace: production
 values: |-
