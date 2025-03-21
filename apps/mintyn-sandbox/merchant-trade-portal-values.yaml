@@ -1,28 +1,28 @@
-name: affiliate-webapp
+name: merchant-trade-portal
 project: mintyn-project
 namespace: sandbox
 values: |-
-  fullnameOverride: affiliate-webapp
+  fullnameOverride: merchant-trade-portal
   image: 
-    repository: mintfintech/mint-affiliate-app:app-7
+    repository: mintfintech/merchant-trade-portal:app-43
   namespace: sandbox
-  containerPort: 80
+  containerPort: 3000
   autoscaling:
     enabled: false
   role:
     enabled: true
   ingress:
-    host: affiliate-sandbox
+    host: merchant-marketplace-sandbox
     domain: mintyn.com
   resources:
     requests:
       memory: "10Mi"
       cpu: "10m"
     limits:
-      memory: "2Gi"
-      cpu: "1000m"
+      memory: "300Mi"
+      cpu: "200m"
   lProbe:
-    enabled: false
+    enabled: true
     path: /
     failureThreshold: 5
     periodSeconds: 5
