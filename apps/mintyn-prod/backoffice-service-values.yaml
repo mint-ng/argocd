@@ -5,7 +5,7 @@ values: |-
   fullnameOverride: backoffice-service
   image: 
     repository: mintfintech/mint-backoffice-service:prod-app-1
-  namespace: sandbox
+  namespace: production
   containerPort: 8099
   autoscaling:
     enabled: false
