@@ -6,7 +6,7 @@ values: |-
   image: 
     repository: mintfintech/document-generation-service:app-6
   namespace: sandbox
-  containerPort: 3000
+  containerPort: 3100
   autoscaling:
     enabled: false
   role:
@@ -37,7 +37,7 @@ values: |-
     - name: NODE_ENV
       value: dev
     - name: PORT
-      value: 3000
+      value: 3100
     - name: SPRING_PROFILES_ACTIVE
       value: sandbox
     - name: KAFKA_HOST
