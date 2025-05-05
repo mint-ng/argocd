@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: document-generation-service
   image: 
-    repository: mintfintech/document-generation-service:app-4
+    repository: mintfintech/document-generation-service:app-5
   namespace: sandbox
   containerPort: 3100
   autoscaling:
