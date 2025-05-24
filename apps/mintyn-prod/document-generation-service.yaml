@@ -1,11 +1,11 @@
 name: document-generation-service
 project: mintyn-project
-namespace: sandbox
+namespace: production
 values: |-
   fullnameOverride: document-generation-service
   image: 
-    repository: mintfintech/document-generation-service:app-5
-  namespace: sandbox
+    repository: mintfintech/document-generation-service:prod-app-5
+  namespace: production
   containerPort: 3100
   autoscaling:
     enabled: false
@@ -19,8 +19,8 @@ values: |-
       memory: "64Mi"
       cpu: "50m"
     limits:
-      memory: "200Mi"
-      cpu: "300m"
+      memory: "1Gi"
+      cpu: "1000m"
   lProbe:
     enabled: true
     path: /
