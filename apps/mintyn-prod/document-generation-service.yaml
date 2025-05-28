@@ -35,11 +35,11 @@ values: |-
     initialDelaySeconds: 60
   env:
     - name: NODE_ENV
-      value: dev
+      value: prod
     - name: PORT
       value: 3100
     - name: SPRING_PROFILES_ACTIVE
-      value: sandbox
+      value: production
     - name: KAFKA_HOST
       valueFrom:
         configMapKeyRef:
