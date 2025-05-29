@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: trade-service
   image: 
-    repository: mintfintech/mint-trade-service:app-116
+    repository: mintfintech/mint-trade-service:app-117
   namespace: sandbox
   containerPort: 8101
   autoscaling:
