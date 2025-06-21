@@ -33,6 +33,9 @@ values: |-
     failureThreshold: 5
     periodSeconds: 10
     initialDelaySeconds: 60
+  envFrom:
+    - secretRef:
+        name: core-banking-service
   env:
     - name: CORE_BANKING_SERVICE_SERVICE_HOST
       value: http://core-banking-service
