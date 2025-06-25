@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: core-banking-service
   image: 
-    repository: mintfintech/mint-core-banking-service:prod-app-13
+    repository: mintfintech/mint-core-banking-service:prod-app-14
   namespace: production
   containerPort: 8092
   autoscaling:
