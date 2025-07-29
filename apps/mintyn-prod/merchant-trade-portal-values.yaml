@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: merchant-trade-portal
   image: 
-    repository: mintfintech/merchant-trade-portal:app-1
+    repository: mintfintech/merchant-trade-portal:prod-app-2
   namespace: production
   containerPort: 3000
   autoscaling:
