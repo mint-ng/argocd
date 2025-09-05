@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: trade-service
   image: 
-    repository: mintfintech/mint-trade-service:app-38
+    repository: mintfintech/mint-trade-service:app-39
   namespace: production
   containerPort: 8101
   autoscaling:
