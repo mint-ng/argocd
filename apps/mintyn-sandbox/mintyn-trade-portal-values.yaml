@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: trade-portal
   image: 
-    repository: mintfintech/mintyn-trade-portal:app-21
+    repository: mintfintech/mintyn-trade-portal:app-22
   namespace: sandbox
   containerPort: 80
   autoscaling:
