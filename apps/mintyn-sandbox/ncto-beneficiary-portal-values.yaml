@@ -1,0 +1,35 @@
+name: ncto-beneficiary-portal
+project: mintyn-project
+namespace: sandbox
+values: |-
+  fullnameOverride: ncto-beneficiary-portal
+  image: 
+    repository: mintfintech/ncto-beneficiary-portal:app-47
+  namespace: sandbox
+  containerPort: 3000
+  autoscaling:
+    enabled: false
+  role:
+    enabled: true
+  ingress:
+    host: ncto-beneficiary-sandbox
+    domain: mintyn.com
+  resources:
+    requests:
+      memory: "10Mi"
+      cpu: "10m"
+    limits:
+      memory: "200Mi"
+      cpu: "100m"
+  lProbe:
+    enabled: true
+    path: /
+    failureThreshold: 5
+    periodSeconds: 5
+    initialDelaySeconds: 10
+  rProbe:
+    enabled: false
+    path: /
+    failureThreshold: 5
+    periodSeconds: 5
+    initialDelaySeconds: 10
