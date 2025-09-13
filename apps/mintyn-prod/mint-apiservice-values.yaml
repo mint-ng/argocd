@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: authorization-api-gateway
   image: 
-    repository: mintfintech/mint-api-gateway-service:app-3
+    repository: mintfintech/mint-api-gateway-service:app-4
   namespace: production
   containerPort: 8090
   autoscaling:
