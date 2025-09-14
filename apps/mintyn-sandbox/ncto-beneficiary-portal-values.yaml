@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: ncto-beneficiary-portal
   image: 
-    repository: mintfintech/ncto-beneficiary-portal:app-10
+    repository: mintfintech/ncto-beneficiary-portal:app-11
   namespace: sandbox
   containerPort: 3000
   autoscaling:
