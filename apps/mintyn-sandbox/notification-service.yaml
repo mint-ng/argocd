@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: notification-service
   image: 
-    repository: mintfintech/notification-service:app-15
+    repository: mintfintech/notification-service:app-16
   namespace: sandbox
   containerPort: 3000
   autoscaling:
