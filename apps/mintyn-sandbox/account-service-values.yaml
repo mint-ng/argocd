@@ -33,6 +33,9 @@ values: |-
     failureThreshold: 5
     periodSeconds: 10
     initialDelaySeconds: 60
+  envFrom:
+    - secretRef:
+        name: account-service 
   env:
     - name: ACCOUNT_SERVICE_SERVICE_HOST
       value: http://account-service

@@ -33,6 +33,9 @@ values: |-
     failureThreshold: 5
     periodSeconds: 10
     initialDelaySeconds: 60
+  envFrom:
+    - secretRef:
+        name: fund-transaction-service
   env:
     - name: FUND_TRANSACTION_SERVICE_SERVICE_HOST
       value: http://fund-transaction-service
