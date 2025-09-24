@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: savings-service
   image: 
-    repository: mintfintech/mint-savings-service:app-58
+    repository: mintfintech/mint-savings-service:app-59
   namespace: sandbox
   containerPort: 8096
   autoscaling:
