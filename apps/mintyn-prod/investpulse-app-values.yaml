@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: investpulse-app
   image: 
-    repository: mintfintech/investpulse-app:prod-app-12
+    repository: mintfintech/investpulse-app:prod-app-1
   namespace: production
   containerPort: 3000
   autoscaling:
