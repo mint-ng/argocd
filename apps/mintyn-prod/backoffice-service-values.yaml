@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: backoffice-service
   image: 
-    repository: mintfintech/mint-backoffice-service:prod-app-7
+    repository: mintfintech/mint-backoffice-service:prod-app-13
   namespace: production
   containerPort: 8099
   autoscaling:

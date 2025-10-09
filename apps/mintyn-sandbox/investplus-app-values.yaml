@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: investplus-app
   image: 
-    repository: mintfintech/investplus-app:app-12
+    repository: mintfintech/investplus-app:app-30
   namespace: sandbox
   containerPort: 3000
   autoscaling:

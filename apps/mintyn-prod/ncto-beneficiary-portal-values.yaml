@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: ncto-beneficiary-portal
   image: 
-    repository: mintfintech/ncto-beneficiary-portal:prod-app-2
+    repository: mintfintech/ncto-beneficiary-portal:prod-app-3
   namespace: production
   containerPort: 3000
   autoscaling:

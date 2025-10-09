@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: openapi-service
   image: 
-    repository: mintfintech/mint-openapi-service:app-76
+    repository: mintfintech/mint-openapi-service:app-88
   namespace: sandbox
   containerPort: 9091
   autoscaling:
