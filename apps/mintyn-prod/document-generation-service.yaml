@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: document-generation-service
   image: 
-    repository: mintfintech/document-generation-service:prod-app-50
+    repository: mintfintech/document-generation-service:prod-app-51
   namespace: production
   containerPort: 3100
   autoscaling:
