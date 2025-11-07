@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: bills-service
   image: 
-    repository: mintfintech/mint-bills-service:app-11
+    repository: mintfintech/mint-bills-service:app-12
   namespace: sandbox
   containerPort: 8098
   autoscaling:
