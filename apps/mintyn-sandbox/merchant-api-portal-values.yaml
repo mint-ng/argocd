@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: apimerchant-app
   image: 
-    repository: mintfintech/apimerchant-app:app-12
+    repository: mintfintech/apimerchant-app:app-1
   namespace: sandbox
   containerPort: 3000
   autoscaling:
