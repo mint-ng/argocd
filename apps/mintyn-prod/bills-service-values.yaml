@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: bills-service
   image: 
-    repository: mintfintech/mint-bills-service:app-26
+    repository: mintfintech/mint-bills-service:app-27
   namespace: production
   containerPort: 8098
   autoscaling:
