@@ -62,7 +62,7 @@ values: |-
           key: DATABASE_URL
   volumeMounts:
     - name: config
-      mountPath: "/config"
+      mountPath: "/mintyn/config"
       readOnly: true
   volumes:
     - name: config
