@@ -40,16 +40,16 @@ values: |-
       value: sandbox
     - name: SPRING_PROFILES_ACTIVE
       value: sandbox
-    - name: KAFKA_BROKERS_URL
-      valueFrom:
-        configMapKeyRef:
-          name: configs
-          key: KAFKA_HOST
    - name: DATABASE_USERNAME
       valueFrom:
         configMapKeyRef:
           name: configs
           key: DATABASE_USERNAME
+    - name: KAFKA_BROKERS_URL
+      valueFrom:
+        configMapKeyRef:
+          name: configs
+          key: KAFKA_HOST
     - name: DATABASE_PASSWORD
       valueFrom:
         configMapKeyRef:
