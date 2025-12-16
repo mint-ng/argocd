@@ -19,8 +19,8 @@ values: |-
       memory: "440Mi"
       cpu: "50m"
     limits:
-      memory: "700Mi"
-      cpu: "500m"
+      memory: "1Gi"
+      cpu: "750m"
   lProbe:
     enabled: true
     path: /actuator/health
