@@ -39,12 +39,7 @@ values: |-
     - name: KUBERNETES_NAMESPACE
       value: sandbox
     - name: SPRING_PROFILES_ACTIVE
-      value: sandbox
-    - name: TOKEN_ISSUER
-      valueFrom:
-        configMapKeyRef:
-          name: virtual-account-service
-          key: TOKEN_ISSUER    
+      value: sandbox  
     - name: DATABASE_USERNAME
       valueFrom:
         configMapKeyRef:
