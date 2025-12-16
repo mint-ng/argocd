@@ -40,6 +40,11 @@ values: |-
       value: sandbox
     - name: SPRING_PROFILES_ACTIVE
       value: sandbox
+    - name: TOKEN_ISSUER
+      valueFrom:
+        configMapKeyRef:
+          name: virtual-account-service
+          key: TOKEN_ISSUER    
     - name: DATABASE_USERNAME
       valueFrom:
         configMapKeyRef:
