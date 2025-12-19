@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: quays-insurance-service
   image: 
-    repository: goquays/quays-insurance-service:app-prod-15
+    repository: goquays/quays-insurance-service:app-prod-16
   namespace: production
   containerPort: 9100
   autoscaling:
