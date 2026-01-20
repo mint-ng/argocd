@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: merchant-trade-portal
   image: 
-    repository: mintfintech/merchant-trade-portal:app-62
+    repository: mintfintech/merchant-trade-portal:app-63
   namespace: sandbox
   containerPort: 3000
   autoscaling:
