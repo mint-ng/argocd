@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: card-service
   image:
-    repository: mintfintech/mint-card-service:app-41
+    repository: mintfintech/mint-card-service:app-42
   namespace: sandbox
   containerPort: 8103
   autoscaling:
