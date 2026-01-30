@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: quays-admin-portal
   image: 
-    repository: goquays/quays-admin-portal:app-prod-9
+    repository: goquays/quays-admin-portal:app-prod-10
   namespace: production
   containerPort: 3000
   autoscaling:
