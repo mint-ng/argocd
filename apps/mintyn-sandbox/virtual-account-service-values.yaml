@@ -60,6 +60,16 @@ values: |-
         configMapKeyRef:
           name: configs
           key: DATABASE_URL
+    - name: TOKEN_MS_SECRET_KEY
+      valueFrom:
+        configMapKeyRef:
+          name: configs
+          key: TOKEN_MS_SECRET
+    - name: TOKEN_CLIENT_SECRET_KEY
+      valueFrom:
+        configMapKeyRef:
+          name: configs
+          key: TOKEN_CLIENT_SECRET
   volumeMounts:
     - name: config
       mountPath: "/mintyn/config"
