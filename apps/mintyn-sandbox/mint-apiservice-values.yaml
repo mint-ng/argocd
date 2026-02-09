@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: mint-api-gateway-service
   image: 
-    repository: mintfintech/mint-api-gateway-service:app-27
+    repository: mintfintech/mint-api-gateway-service:app-28
   namespace: sandbox
   containerPort: 8090
   autoscaling:
