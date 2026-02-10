@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: card-service
   image: 
-    repository: mintfintech/mint-card-service:app-123
+    repository: mintfintech/mint-card-service:app-124
   namespace: production
   containerPort: 8103
   autoscaling:
