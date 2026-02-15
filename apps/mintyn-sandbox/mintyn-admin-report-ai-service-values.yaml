@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: mintyn-admin-report-ai-service
   image: 
-    repository: mintfintech/mintyn-admin-report-ai-service:app-4
+    repository: mintfintech/mintyn-admin-report-ai-service:app-5
   namespace: sandbox
   containerPort: 5000
   autoscaling:
