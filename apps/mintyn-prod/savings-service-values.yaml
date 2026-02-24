@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: savings-service
   image: 
-    repository: mintfintech/mint-savings-service:prod-app-60
+    repository: mintfintech/mint-savings-service:prod-app-61
   namespace: production
   containerPort: 8096
   autoscaling:
