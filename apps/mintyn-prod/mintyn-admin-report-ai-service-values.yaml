@@ -35,7 +35,7 @@ values: |-
     initialDelaySeconds: 60
   env:
     - name: KUBERNETES_NAMESPACE
-      value: sandbox
+      value: production
     - name: DB_NAME
       value: mint_account_db
     - name: DB_PASS
