@@ -1,18 +1,18 @@
 name: admin-copilot-ai-service
 project: mintyn-project
-namespace: sandbox
+namespace: production
 values: |-
   fullnameOverride: admin-copilot-ai-service
   image: 
-    repository: mintfintech/mintyn-admin-report-ai-service:app-9
-  namespace: sandbox
+    repository: mintfintech/admin-copilot-ai-service:prod-app-9
+  namespace: production
   containerPort: 5000
   autoscaling:
     enabled: false
   role:
     enabled: true
   ingress:
-    host: admin-ai-copilot-sandbox
+    host: admin-ai-copilot
     domain: mintfintech.com
   resources:
     requests:
@@ -56,5 +56,5 @@ values: |-
     - name: OPENAI_API_KEY
       valueFrom:
         configMapKeyRef:
-          name: configs
+          name: admin-copilot-ai-service
           key: OPENAI_API_KEY
