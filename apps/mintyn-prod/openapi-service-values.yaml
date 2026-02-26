@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: openapi-service
   image: 
-    repository: mintfintech/mint-openapi-service:app-3
+    repository: mintfintech/mint-openapi-service:app-4
   namespace: production
   containerPort: 9091
   autoscaling:
