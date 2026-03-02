@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: apimerchant-app
   image: 
-    repository: mintfintech/apimerchant-app:prod-app-1
+    repository: mintfintech/apimerchant-app:prod-app-2
   namespace: production
   containerPort: 3000
   autoscaling:
