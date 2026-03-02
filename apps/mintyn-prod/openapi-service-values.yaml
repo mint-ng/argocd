@@ -26,13 +26,13 @@ values: |-
     path: /actuator/health
     failureThreshold: 5
     periodSeconds: 10
-    initialDelaySeconds: 60
+    initialDelaySeconds: 120
   rProbe:
     enabled: true
     path: /actuator/health
     failureThreshold: 5
     periodSeconds: 10
-    initialDelaySeconds: 60
+    initialDelaySeconds: 120
   env:
     - name: OPENAPI_SERVICE_SERVICE_HOST
       value: http://openapi-service
