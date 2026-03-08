@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: virtual-account-service
   image: 
-    repository: mintfintech/virtual-account-service:prod-app-9
+    repository: mintfintech/virtual-account-service:prod-app-10
   namespace: production
   containerPort: 8097
   autoscaling:
