@@ -38,6 +38,8 @@ values: |-
       value: production
     - name: DB_NAME
       value: mint_account_db
+    - name: TRANSFER_DB_NAME
+      value: mint_fund_transaction_db
     - name: DB_PASS
       valueFrom:
         configMapKeyRef:
