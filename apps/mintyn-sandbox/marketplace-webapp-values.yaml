@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: marketplace-webapp
   image: 
-    repository: mintfintech/marketplace-webapp:app-10
+    repository: mintfintech/marketplace-webapp:app-11
   namespace: sandbox
   containerPort: 3000
   autoscaling:
