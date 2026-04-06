@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: account-service
   image: 
-    repository: mintfintech/mint-account-service:app-138
+    repository: mintfintech/mint-account-service:app-139
   namespace: production
   containerPort: 8091
   autoscaling:
