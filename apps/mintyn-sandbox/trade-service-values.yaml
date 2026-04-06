@@ -16,7 +16,7 @@ values: |-
     domain: mintfintech.com
   resources:
     requests:
-      memory: "440Mi"
+      memory: "600Mi"
       cpu: "50m"
     limits:
       memory: "1Gi"
