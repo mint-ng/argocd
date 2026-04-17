@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: marketplace-webapp
   image: 
-    repository: mintfintech/marketplace-webapp:prod-app-12
+    repository: mintfintech/marketplace-webapp:prod-app-13
   namespace: production
   containerPort: 3000
   autoscaling:
