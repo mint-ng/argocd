@@ -4,7 +4,7 @@
 #values: |-
 #  fullnameOverride: admin-copilot-ai-service
 #  image:
-#    repository: mintfintech/mintyn-admin-report-ai-service:app-24
+#    repository: mintfintech/mintyn-admin-report-ai-service:app-25
 #  namespace: sandbox
 #  containerPort: 5000
 #  autoscaling:
