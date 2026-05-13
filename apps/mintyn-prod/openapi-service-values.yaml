@@ -33,6 +33,9 @@ values: |-
     failureThreshold: 5
     periodSeconds: 10
     initialDelaySeconds: 120
+  envFrom:
+    - secretRef:
+        name: openapi-service
   env:
     - name: OPENAPI_SERVICE_SERVICE_HOST
       value: http://openapi-service
