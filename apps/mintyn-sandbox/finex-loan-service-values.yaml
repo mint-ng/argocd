@@ -33,9 +33,6 @@ values: |-
     failureThreshold: 5
     periodSeconds: 10
     initialDelaySeconds: 60
-  envFrom:
-    - secretRef:
-        name: account-service 
   env:
     - name: KUBERNETES_NAMESPACE
       value: sandbox
