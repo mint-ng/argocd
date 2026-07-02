@@ -45,12 +45,12 @@ values: |-
         configMapKeyRef:
           name: configs
           key: KAFKA_HOST
-    - name: DATABASE_USERNAME
+    - name: DB_USERNAME
       valueFrom:
         configMapKeyRef:
           name: configs
           key: DATABASE_USERNAME
-    - name: DATABASE_PASSWORD
+    - name: DB_PASSWORD
       valueFrom:
         configMapKeyRef:
           name: configs
