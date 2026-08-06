@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: fund-transaction-service
   image: 
-    repository: mintfintech/mint-fund-transaction-service:app-29
+    repository: mintfintech/mint-fund-transaction-service:app-30
   namespace: sandbox
   containerPort: 8094
   autoscaling:
