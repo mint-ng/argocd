@@ -77,4 +77,4 @@ values: |-
   volumes:
     - name: config
       configMap:
-        name: account-service
+        name: finex-loan-service
