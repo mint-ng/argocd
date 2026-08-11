@@ -70,11 +70,23 @@ values: |-
         configMapKeyRef:
           name: configs
           key: FINTELLIA_CLIENT_SECRET
-  volumeMounts:
-    - name: finex-config
-      mountPath: "/config"
-      readOnly: true
-  volumes:
-    - name: finex-config
-      configMap:
-        name: finex-loan-service
+    - name: AWS_SECRET_KEY
+      valueFrom:
+        configMapKeyRef:
+          name: finex-loan-service
+          key: AWS_SECRET_KEY
+    - name: AWS_ACCESS_KEY
+      valueFrom:
+        configMapKeyRef:
+          name: finex-loan-service
+          key: AWS_ACCESS_KEY
+    - name: AWS_SES_FROM_EMAIL
+      valueFrom:
+        configMapKeyRef:
+          name: finex-loan-service
+          key: AWS_SES_FROM_EMAIL
+    - name: IMAGEKIT_PRIVATE_KEY
+      valueFrom:
+        configMapKeyRef:
+          name: finex-loan-service
+          key: IMAGEKIT_PRIVATE_KEY
