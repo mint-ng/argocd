@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: finex-adminapp
   image: 
-    repository: mintfintech/finex-adminapp:app-7
+    repository: mintfintech/finex-adminapp:app-8
   namespace: sandbox
   containerPort: 3000
   autoscaling:
