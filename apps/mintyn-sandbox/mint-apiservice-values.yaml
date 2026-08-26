@@ -40,6 +40,23 @@ values: |-
       value: sandbox
     - name: SPRING_PROFILES_ACTIVE
       value: sandbox
+    - name: DB_NAME
+      value: mint_authentication_db
+    - name: DB_HOST
+      valueFrom:
+        configMapKeyRef:
+          name: configs
+          key: DATABASE_HOST
+    - name: DB_USERNAME
+      valueFrom:
+        configMapKeyRef:
+          name: configs
+          key: DATABASE_USERNAME
+    - name: DB_PASSWORD
+      valueFrom:
+        configMapKeyRef:
+          name: configs
+          key: DATABASE_PASSWORD
     - name: KAFKA_BROKERS_URL
       valueFrom:
         configMapKeyRef:
