@@ -4,7 +4,7 @@ namespace: sandbox
 values: |-
   fullnameOverride: finex-loan-service
   image: 
-    repository: mintfintech/finex-loan-service:app-199
+    repository: mintfintech/finex-loan-service:app-200
   namespace: sandbox
   containerPort: 9090
   autoscaling:
