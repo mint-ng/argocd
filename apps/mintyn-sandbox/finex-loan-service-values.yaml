@@ -90,3 +90,33 @@ values: |-
         configMapKeyRef:
           name: finex-loan-service
           key: IMAGEKIT_PRIVATE_KEY
+    - name: HYPERVERGE_APP_ID
+      valueFrom:
+        configMapKeyRef:
+          name: finex-loan-service
+          key: HYPERVERGE_APP_ID
+    - name: HYPERVERGE_APP_KEY
+      valueFrom:
+        configMapKeyRef:
+          name: finex-loan-service
+          key: HYPERVERGE_APP_KEY
+    - name: DOJAH_SECRET_KEY
+      valueFrom:
+        configMapKeyRef:
+          name: finex-loan-service
+          key: DOJAH_SECRET_KEY
+    - name: DOJAH_APP_ID
+      valueFrom:
+        configMapKeyRef:
+          name: finex-loan-service
+          key: DOJAH_APP_ID
+    - name: TERMII_API_KEY
+      valueFrom:
+        configMapKeyRef:
+          name: finex-loan-service
+          key: TERMII_API_KEY
+    - name: TERMII_SENDER_ID
+      valueFrom:
+        configMapKeyRef:
+          name: finex-loan-service
+          key: TERMII_SENDER_ID
