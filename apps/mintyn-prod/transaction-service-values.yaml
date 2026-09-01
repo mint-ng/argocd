@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: fund-transaction-service
   image: 
-    repository: mintfintech/mint-fund-transaction-service:app-226
+    repository: mintfintech/mint-fund-transaction-service:app-227
   namespace: production
   containerPort: 8094
   autoscaling:
