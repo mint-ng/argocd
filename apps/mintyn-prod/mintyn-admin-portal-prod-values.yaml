@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: mint-admin-portal
   image: 
-    repository: mintfintech/mintyn-admin-portal:prod-app-35
+    repository: mintfintech/mintyn-admin-portal:prod-app-36
   namespace: production
   containerPort: 80
   autoscaling:
