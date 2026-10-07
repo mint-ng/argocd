@@ -4,7 +4,7 @@ namespace: production
 values: |-
   fullnameOverride: admin-copilot-ai-service
   image: 
-    repository: mintfintech/admin-copilot-ai-service:prod-app-13
+    repository: mintfintech/admin-copilot-ai-service:prod-app-14
   namespace: production
   containerPort: 5000
   autoscaling:
