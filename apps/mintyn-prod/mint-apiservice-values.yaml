@@ -72,6 +72,16 @@ values: |-
         configMapKeyRef:
           name: configs
           key: TOKEN_CLIENT_SECRET
+    - name: SWAGGER_PASSWORD
+      valueFrom:
+        configMapKeyRef:
+          name: configs
+          key: SWAGGER_PASSWORD
+    - name: SWAGGER_USER
+      valueFrom:
+        configMapKeyRef:
+          name: configs
+          key: SWAGGER_USER
   volumeMounts:
     - name: config
       mountPath: "/config"
