@@ -64,12 +64,12 @@ values: |-
       valueFrom:
         configMapKeyRef:
           name: configs
-          key: FINTELLIA_CLIENT_ID
+          key: FINEX_FINTELLIA_CLIENT_ID
     - name: FINTELLIA_CLIENT_SECRET
       valueFrom:
         configMapKeyRef:
           name: configs
-          key: FINTELLIA_CLIENT_SECRET
+          key: FINEX_FINTELLIA_CLIENT_SECRET
     - name: AWS_SECRET_KEY
       valueFrom:
         configMapKeyRef:
