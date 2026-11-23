@@ -17,7 +17,7 @@ values: |-
   resources:
     requests:
       memory: "450Mi"
-      cpu: "250m"
+      cpu: "255m"
     limits:
       memory: "2Gi"
       cpu: "1000m"
